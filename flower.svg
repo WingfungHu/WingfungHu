@@ -306,44 +306,47 @@
   <!-- ====================================================== -->
 
   <g
-    transform="translate(350 390)"
-    opacity="0"
+  transform="translate(350 390)"
   >
 
-    <path
-      d="
-        M0 0
-        C-55 -8 -105 -40 -122 -82
-        C-73 -79 -25 -60 0 -27
-        Z
-      "
-      fill="url(#leaf)"
-      filter="url(#smallGlow)"
-    />
+    <g opacity="0">
 
-    <path
-      d="M-5 -5 C-48 -25 -78 -43 -111 -67"
-      fill="none"
-      stroke="#c1ffda"
-      stroke-width="2"
-      opacity="0.6"
-    />
+        <path
+        d="
+            M0 0
+            C-55 -8 -105 -40 -122 -82
+            C-73 -79 -25 -60 0 -27
+            Z
+        "
+        fill="url(#leaf)"
+        filter="url(#smallGlow)"
+        />
 
-    <animate
-      attributeName="opacity"
-      values="0;0;1"
-      dur="4s"
-      fill="freeze"
-    />
+        <path
+        d="M-5 -5 C-48 -25 -78 -43 -111 -67"
+        fill="none"
+        stroke="#c1ffda"
+        stroke-width="2"
+        opacity="0.6"
+        />
 
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      values="0 350 390; -3 350 390; 0 350 390; 3 350 390; 0 350 390"
-      dur="6s"
-      begin="4s"
-      repeatCount="indefinite"
-    />
+        <animate
+        attributeName="opacity"
+        values="0;0;1"
+        dur="4s"
+        fill="freeze"
+        />
+
+        <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 0 0; -3 0 0; 0 0 0; 3 0 0; 0 0 0"
+        dur="6s"
+        begin="4s"
+        repeatCount="indefinite"
+        />
+
+    </g>
 
   </g>
 
@@ -353,44 +356,47 @@
   <!-- ====================================================== -->
 
   <g
-    transform="translate(350 335)"
-    opacity="0"
+  transform="translate(350 335)"
   >
 
-    <path
-      d="
-        M0 0
-        C55 -5 102 -35 120 -78
-        C72 -76 27 -56 0 -25
-        Z
-      "
-      fill="url(#leaf)"
-      filter="url(#smallGlow)"
-    />
+    <g opacity="0">
 
-    <path
-      d="M5 -5 C45 -22 76 -41 109 -64"
-      fill="none"
-      stroke="#c1ffda"
-      stroke-width="2"
-      opacity="0.6"
-    />
+        <path
+        d="
+            M0 0
+            C55 -5 102 -35 120 -78
+            C72 -76 27 -56 0 -25
+            Z
+        "
+        fill="url(#leaf)"
+        filter="url(#smallGlow)"
+        />
 
-    <animate
-      attributeName="opacity"
-      values="0;0;0;1"
-      dur="4.5s"
-      fill="freeze"
-    />
+        <path
+        d="M5 -5 C45 -22 76 -41 109 -64"
+        fill="none"
+        stroke="#c1ffda"
+        stroke-width="2"
+        opacity="0.6"
+        />
 
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      values="0 350 335; 3 350 335; 0 350 335; -3 350 335; 0 350 335"
-      dur="6.5s"
-      begin="4.5s"
-      repeatCount="indefinite"
-    />
+        <animate
+        attributeName="opacity"
+        values="0;0;0;1"
+        dur="4.5s"
+        fill="freeze"
+        />
+
+        <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 0 0; 3 0 0; 0 0 0; -3 0 0; 0 0 0"
+        dur="6.5s"
+        begin="4.5s"
+        repeatCount="indefinite"
+        />
+
+    </g>
 
   </g>
 
@@ -401,207 +407,211 @@
 
   <g transform="translate(350 180)">
 
-    <!-- Entire flower gently moves -->
+    <g>
 
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      values="
-        0 0 0;
-        -1.5 0 0;
-        0 0 0;
-        1.5 0 0;
-        0 0 0
-      "
-      dur="8s"
-      begin="5s"
-      repeatCount="indefinite"
-    />
+        <!-- Entire flower gently moves -->
+
+        <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="
+            0 0 0;
+            -1.5 0 0;
+            0 0 0;
+            1.5 0 0;
+            0 0 0
+        "
+        dur="8s"
+        begin="5s"
+        repeatCount="indefinite"
+        />
 
 
-    <!-- ==================================================== -->
-    <!-- CLOSED BUD                                           -->
-    <!-- ==================================================== -->
+        <!-- ==================================================== -->
+        <!-- CLOSED BUD                                           -->
+        <!-- ==================================================== -->
 
-    <g opacity="1">
+        <g opacity="1">
 
-      <ellipse
-        cx="0"
-        cy="-20"
-        rx="19"
-        ry="35"
+        <ellipse
+            cx="0"
+            cy="-20"
+            rx="19"
+            ry="35"
+            fill="url(#innerPetal)"
+            filter="url(#glow)"
+        >
+
+            <animate
+            attributeName="opacity"
+            values="1;1;1;0"
+            dur="6s"
+            begin="3s"
+            fill="freeze"
+            />
+
+            <animate
+            attributeName="ry"
+            values="35;36;35;10"
+            dur="6s"
+            begin="3s"
+            fill="freeze"
+            />
+
+        </ellipse>
+
+        </g>
+
+
+        <!-- ==================================================== -->
+        <!-- OUTER PETALS                                         -->
+        <!-- ==================================================== -->
+
+        <g
+        opacity="0"
+        transform="scale(0.15)"
+        >
+
+        <use href="#petalShape" transform="rotate(0)"/>
+        <use href="#petalShape" transform="rotate(60)"/>
+        <use href="#petalShape" transform="rotate(120)"/>
+        <use href="#petalShape" transform="rotate(180)"/>
+        <use href="#petalShape" transform="rotate(240)"/>
+        <use href="#petalShape" transform="rotate(300)"/>
+
+        <animate
+            attributeName="opacity"
+            values="0;0;1"
+            dur="6s"
+            begin="3s"
+            fill="freeze"
+        />
+
+        <animateTransform
+            attributeName="transform"
+            type="scale"
+            values="0.15;0.15;0.7;1;1"
+            dur="6s"
+            begin="3s"
+            fill="freeze"
+        />
+
+        </g>
+
+
+        <!-- ==================================================== -->
+        <!-- INNER PETALS                                         -->
+        <!-- ==================================================== -->
+
+        <g
+        opacity="0"
+        transform="scale(0.2)"
         fill="url(#innerPetal)"
-        filter="url(#glow)"
-      >
+        >
 
-        <animate
-          attributeName="opacity"
-          values="1;1;1;0"
-          dur="6s"
-          begin="3s"
-          fill="freeze"
+        <ellipse
+            cx="0"
+            cy="-38"
+            rx="21"
+            ry="43"
+        />
+
+        <ellipse
+            cx="0"
+            cy="-38"
+            rx="21"
+            ry="43"
+            transform="rotate(72)"
+        />
+
+        <ellipse
+            cx="0"
+            cy="-38"
+            rx="21"
+            ry="43"
+            transform="rotate(144)"
+        />
+
+        <ellipse
+            cx="0"
+            cy="-38"
+            rx="21"
+            ry="43"
+            transform="rotate(216)"
+        />
+
+        <ellipse
+            cx="0"
+            cy="-38"
+            rx="21"
+            ry="43"
+            transform="rotate(288)"
         />
 
         <animate
-          attributeName="ry"
-          values="35;36;35;10"
-          dur="6s"
-          begin="3s"
-          fill="freeze"
+            attributeName="opacity"
+            values="0;0;0;1"
+            dur="6.5s"
+            begin="3.5s"
+            fill="freeze"
         />
 
-      </ellipse>
+        <animateTransform
+            attributeName="transform"
+            type="scale"
+            values="0.2;0.2;0.7;1;1"
+            dur="6.5s"
+            begin="3.5s"
+            fill="freeze"
+        />
 
-    </g>
-
-
-    <!-- ==================================================== -->
-    <!-- OUTER PETALS                                         -->
-    <!-- ==================================================== -->
-
-    <g
-      opacity="0"
-      transform="scale(0.15)"
-    >
-
-      <use href="#petalShape" transform="rotate(0)"/>
-      <use href="#petalShape" transform="rotate(60)"/>
-      <use href="#petalShape" transform="rotate(120)"/>
-      <use href="#petalShape" transform="rotate(180)"/>
-      <use href="#petalShape" transform="rotate(240)"/>
-      <use href="#petalShape" transform="rotate(300)"/>
-
-      <animate
-        attributeName="opacity"
-        values="0;0;1"
-        dur="6s"
-        begin="3s"
-        fill="freeze"
-      />
-
-      <animateTransform
-        attributeName="transform"
-        type="scale"
-        values="0.15;0.15;0.7;1;1"
-        dur="6s"
-        begin="3s"
-        fill="freeze"
-      />
-
-    </g>
+        </g>
 
 
-    <!-- ==================================================== -->
-    <!-- INNER PETALS                                         -->
-    <!-- ==================================================== -->
+        <!-- ==================================================== -->
+        <!-- FLOWER CENTER                                        -->
+        <!-- ==================================================== -->
 
-    <g
-      opacity="0"
-      transform="scale(0.2)"
-      fill="url(#innerPetal)"
-    >
+        <g
+        opacity="0"
+        >
 
-      <ellipse
-        cx="0"
-        cy="-38"
-        rx="21"
-        ry="43"
-      />
+        <circle
+            r="26"
+            fill="#fff1a8"
+            opacity="0.2"
+            filter="url(#glow)"
+        />
 
-      <ellipse
-        cx="0"
-        cy="-38"
-        rx="21"
-        ry="43"
-        transform="rotate(72)"
-      />
+        <circle
+            r="19"
+            fill="url(#center)"
+            filter="url(#smallGlow)"
+        >
+            <animate
+            attributeName="r"
+            values="19;21;19"
+            dur="3s"
+            begin="6s"
+            repeatCount="indefinite"
+            />
+        </circle>
 
-      <ellipse
-        cx="0"
-        cy="-38"
-        rx="21"
-        ry="43"
-        transform="rotate(144)"
-      />
+        <circle
+            r="7"
+            fill="#fff"
+            opacity="0.8"
+        />
 
-      <ellipse
-        cx="0"
-        cy="-38"
-        rx="21"
-        ry="43"
-        transform="rotate(216)"
-      />
-
-      <ellipse
-        cx="0"
-        cy="-38"
-        rx="21"
-        ry="43"
-        transform="rotate(288)"
-      />
-
-      <animate
-        attributeName="opacity"
-        values="0;0;0;1"
-        dur="6.5s"
-        begin="3.5s"
-        fill="freeze"
-      />
-
-      <animateTransform
-        attributeName="transform"
-        type="scale"
-        values="0.2;0.2;0.7;1;1"
-        dur="6.5s"
-        begin="3.5s"
-        fill="freeze"
-      />
-
-    </g>
-
-
-    <!-- ==================================================== -->
-    <!-- FLOWER CENTER                                        -->
-    <!-- ==================================================== -->
-
-    <g
-      opacity="0"
-    >
-
-      <circle
-        r="26"
-        fill="#fff1a8"
-        opacity="0.2"
-        filter="url(#glow)"
-      />
-
-      <circle
-        r="19"
-        fill="url(#center)"
-        filter="url(#smallGlow)"
-      >
         <animate
-          attributeName="r"
-          values="19;21;19"
-          dur="3s"
-          begin="6s"
-          repeatCount="indefinite"
+            attributeName="opacity"
+            values="0;0;1"
+            dur="6s"
+            begin="4.5s"
+            fill="freeze"
         />
-      </circle>
 
-      <circle
-        r="7"
-        fill="#fff"
-        opacity="0.8"
-      />
-
-      <animate
-        attributeName="opacity"
-        values="0;0;1"
-        dur="6s"
-        begin="4.5s"
-        fill="freeze"
-      />
+        </g>
 
     </g>
 
