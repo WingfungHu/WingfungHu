@@ -2,7 +2,7 @@
 
 # 🌸 `Wingfung Hu`
 
-### `still growing.`
+### `Still growing.`
 
 <img src="./flower.svg" width="650" alt="A glowing animated flower growing in the night">
 
