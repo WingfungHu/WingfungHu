@@ -431,35 +431,32 @@
         <!-- CLOSED BUD                                           -->
         <!-- ==================================================== -->
 
-        <g opacity="1">
-
-        <ellipse
+        <g opacity="0">
+          <ellipse
             cx="0"
             cy="-20"
             rx="19"
             ry="35"
             fill="url(#innerPetal)"
             filter="url(#glow)"
-        >
+          />
 
-            <animate
+          <animate
             attributeName="opacity"
-            values="1;1;1;0"
-            dur="6s"
-            begin="3s"
+            values="0;1;1;0"
+            dur="3s"
+            begin="3.4s"
             fill="freeze"
-            />
+          />
 
-            <animate
-            attributeName="ry"
-            values="35;36;35;10"
-            dur="6s"
-            begin="3s"
+          <animateTransform
+            attributeName="transform"
+            type="scale"
+            values="0.7;1;1;0.7"
+            dur="3s"
+            begin="3.4s"
             fill="freeze"
-            />
-
-        </ellipse>
-
+          />
         </g>
 
 

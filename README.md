@@ -38,7 +38,7 @@ Always looking for the next thing worth building.
 
 <div align="center">
 
-### `what I'm growing`
+### `What I'm growing`
 
 🌱 **Software Engineering**  
 Building things that are useful, maintainable, and actually work.
