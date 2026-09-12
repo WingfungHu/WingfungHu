@@ -1,0 +1,739 @@
+<svg
+  width="700"
+  height="620"
+  viewBox="0 0 700 620"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+
+    <!-- Background -->
+    <radialGradient id="background" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#171326"/>
+      <stop offset="55%" stop-color="#0c0b14"/>
+      <stop offset="100%" stop-color="#050509"/>
+    </radialGradient>
+
+    <!-- Petal -->
+    <radialGradient id="petal" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#eadfff"/>
+      <stop offset="65%" stop-color="#b995ff"/>
+      <stop offset="100%" stop-color="#7650c9"/>
+    </radialGradient>
+
+    <!-- Inner petal -->
+    <radialGradient id="innerPetal" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="45%" stop-color="#f0e5ff"/>
+      <stop offset="100%" stop-color="#a77be8"/>
+    </radialGradient>
+
+    <!-- Stem -->
+    <linearGradient id="stem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#baffd1"/>
+      <stop offset="45%" stop-color="#59d994"/>
+      <stop offset="100%" stop-color="#27855c"/>
+    </linearGradient>
+
+    <!-- Leaf -->
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#baffd4"/>
+      <stop offset="50%" stop-color="#54d895"/>
+      <stop offset="100%" stop-color="#257a54"/>
+    </linearGradient>
+
+    <!-- Center -->
+    <radialGradient id="center">
+      <stop offset="0%" stop-color="#fffde2"/>
+      <stop offset="45%" stop-color="#ffe99a"/>
+      <stop offset="100%" stop-color="#dba942"/>
+    </radialGradient>
+
+    <!-- Glow -->
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Petal bloom animation -->
+    <g id="petalShape">
+      <ellipse
+        cx="0"
+        cy="-67"
+        rx="31"
+        ry="68"
+        fill="url(#petal)"
+      />
+    </g>
+
+    <!-- Small star -->
+    <g id="star">
+      <path
+        d="M0 -5 L1.5 -1.5 L5 0 L1.5 1.5 L0 5 L-1.5 1.5 L-5 0 L-1.5 -1.5 Z"
+        fill="#ffffff"
+      />
+    </g>
+
+  </defs>
+
+
+  <!-- ====================================================== -->
+  <!-- BACKGROUND                                             -->
+  <!-- ====================================================== -->
+
+  <rect
+    width="700"
+    height="620"
+    fill="url(#background)"
+  />
+
+
+  <!-- ====================================================== -->
+  <!-- DISTANT STARS                                          -->
+  <!-- ====================================================== -->
+
+  <g opacity="0.7">
+
+    <circle cx="95" cy="115" r="1.5" fill="#fff">
+      <animate
+        attributeName="opacity"
+        values="0.15;0.9;0.15"
+        dur="3.2s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="160" cy="70" r="1" fill="#fff">
+      <animate
+        attributeName="opacity"
+        values="0.8;0.15;0.8"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="560" cy="100" r="1.5" fill="#fff">
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="2.7s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="620" cy="190" r="1" fill="#fff">
+      <animate
+        attributeName="opacity"
+        values="0.9;0.1;0.9"
+        dur="3.8s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="70" cy="285" r="1" fill="#fff">
+      <animate
+        attributeName="opacity"
+        values="0.1;0.8;0.1"
+        dur="2.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="625" cy="315" r="1.5" fill="#fff">
+      <animate
+        attributeName="opacity"
+        values="0.7;0.15;0.7"
+        dur="4.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- FLOATING PARTICLES                                     -->
+  <!-- ====================================================== -->
+
+  <g fill="#cbb5ff" filter="url(#smallGlow)">
+
+    <circle cx="130" cy="390" r="2">
+      <animate
+        attributeName="cy"
+        values="390;320;390"
+        dur="6s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="opacity"
+        values="0;0.8;0"
+        dur="6s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="570" cy="410" r="1.8">
+      <animate
+        attributeName="cy"
+        values="410;330;410"
+        dur="7s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="opacity"
+        values="0;0.7;0"
+        dur="7s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="180" cy="250" r="1.5">
+      <animate
+        attributeName="cy"
+        values="250;205;250"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="opacity"
+        values="0;0.6;0"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="520" cy="270" r="2">
+      <animate
+        attributeName="cy"
+        values="270;210;270"
+        dur="5.5s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="opacity"
+        values="0;0.8;0"
+        dur="5.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- GROUND                                                 -->
+  <!-- ====================================================== -->
+
+  <ellipse
+    cx="350"
+    cy="555"
+    rx="170"
+    ry="18"
+    fill="#42b883"
+    opacity="0.12"
+    filter="url(#glow)"
+  />
+
+  <ellipse
+    cx="350"
+    cy="555"
+    rx="115"
+    ry="7"
+    fill="#7effb1"
+    opacity="0.15"
+  />
+
+
+  <!-- ====================================================== -->
+  <!-- STEM                                                   -->
+  <!-- ====================================================== -->
+
+  <g>
+
+    <path
+      d="
+        M350 555
+        C350 505 348 455 352 410
+        C356 365 346 325 350 285
+        C354 245 348 215 350 180
+      "
+      fill="none"
+      stroke="url(#stem)"
+      stroke-width="7"
+      stroke-linecap="round"
+      stroke-dasharray="390"
+      stroke-dashoffset="390"
+    >
+
+      <animate
+        attributeName="stroke-dashoffset"
+        from="390"
+        to="0"
+        dur="3s"
+        begin="0.4s"
+        fill="freeze"
+      />
+
+    </path>
+
+    <!-- stem sway after growth -->
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 350 555; -1.2 350 555; 0 350 555; 1.2 350 555; 0 350 555"
+      dur="7s"
+      begin="3.4s"
+      repeatCount="indefinite"
+    />
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- LEFT LEAF                                              -->
+  <!-- ====================================================== -->
+
+  <g
+    transform="translate(350 390)"
+    opacity="0"
+  >
+
+    <path
+      d="
+        M0 0
+        C-55 -8 -105 -40 -122 -82
+        C-73 -79 -25 -60 0 -27
+        Z
+      "
+      fill="url(#leaf)"
+      filter="url(#smallGlow)"
+    />
+
+    <path
+      d="M-5 -5 C-48 -25 -78 -43 -111 -67"
+      fill="none"
+      stroke="#c1ffda"
+      stroke-width="2"
+      opacity="0.6"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="0;0;1"
+      dur="4s"
+      fill="freeze"
+    />
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 350 390; -3 350 390; 0 350 390; 3 350 390; 0 350 390"
+      dur="6s"
+      begin="4s"
+      repeatCount="indefinite"
+    />
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- RIGHT LEAF                                             -->
+  <!-- ====================================================== -->
+
+  <g
+    transform="translate(350 335)"
+    opacity="0"
+  >
+
+    <path
+      d="
+        M0 0
+        C55 -5 102 -35 120 -78
+        C72 -76 27 -56 0 -25
+        Z
+      "
+      fill="url(#leaf)"
+      filter="url(#smallGlow)"
+    />
+
+    <path
+      d="M5 -5 C45 -22 76 -41 109 -64"
+      fill="none"
+      stroke="#c1ffda"
+      stroke-width="2"
+      opacity="0.6"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="0;0;0;1"
+      dur="4.5s"
+      fill="freeze"
+    />
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 350 335; 3 350 335; 0 350 335; -3 350 335; 0 350 335"
+      dur="6.5s"
+      begin="4.5s"
+      repeatCount="indefinite"
+    />
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- FLOWER GROUP                                           -->
+  <!-- ====================================================== -->
+
+  <g transform="translate(350 180)">
+
+    <!-- Entire flower gently moves -->
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="
+        0 0 0;
+        -1.5 0 0;
+        0 0 0;
+        1.5 0 0;
+        0 0 0
+      "
+      dur="8s"
+      begin="5s"
+      repeatCount="indefinite"
+    />
+
+
+    <!-- ==================================================== -->
+    <!-- CLOSED BUD                                           -->
+    <!-- ==================================================== -->
+
+    <g opacity="1">
+
+      <ellipse
+        cx="0"
+        cy="-20"
+        rx="19"
+        ry="35"
+        fill="url(#innerPetal)"
+        filter="url(#glow)"
+      >
+
+        <animate
+          attributeName="opacity"
+          values="1;1;1;0"
+          dur="6s"
+          begin="3s"
+          fill="freeze"
+        />
+
+        <animate
+          attributeName="ry"
+          values="35;36;35;10"
+          dur="6s"
+          begin="3s"
+          fill="freeze"
+        />
+
+      </ellipse>
+
+    </g>
+
+
+    <!-- ==================================================== -->
+    <!-- OUTER PETALS                                         -->
+    <!-- ==================================================== -->
+
+    <g
+      opacity="0"
+      transform="scale(0.15)"
+    >
+
+      <use href="#petalShape" transform="rotate(0)"/>
+      <use href="#petalShape" transform="rotate(60)"/>
+      <use href="#petalShape" transform="rotate(120)"/>
+      <use href="#petalShape" transform="rotate(180)"/>
+      <use href="#petalShape" transform="rotate(240)"/>
+      <use href="#petalShape" transform="rotate(300)"/>
+
+      <animate
+        attributeName="opacity"
+        values="0;0;1"
+        dur="6s"
+        begin="3s"
+        fill="freeze"
+      />
+
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="0.15;0.15;0.7;1;1"
+        dur="6s"
+        begin="3s"
+        fill="freeze"
+      />
+
+    </g>
+
+
+    <!-- ==================================================== -->
+    <!-- INNER PETALS                                         -->
+    <!-- ==================================================== -->
+
+    <g
+      opacity="0"
+      transform="scale(0.2)"
+      fill="url(#innerPetal)"
+    >
+
+      <ellipse
+        cx="0"
+        cy="-38"
+        rx="21"
+        ry="43"
+      />
+
+      <ellipse
+        cx="0"
+        cy="-38"
+        rx="21"
+        ry="43"
+        transform="rotate(72)"
+      />
+
+      <ellipse
+        cx="0"
+        cy="-38"
+        rx="21"
+        ry="43"
+        transform="rotate(144)"
+      />
+
+      <ellipse
+        cx="0"
+        cy="-38"
+        rx="21"
+        ry="43"
+        transform="rotate(216)"
+      />
+
+      <ellipse
+        cx="0"
+        cy="-38"
+        rx="21"
+        ry="43"
+        transform="rotate(288)"
+      />
+
+      <animate
+        attributeName="opacity"
+        values="0;0;0;1"
+        dur="6.5s"
+        begin="3.5s"
+        fill="freeze"
+      />
+
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="0.2;0.2;0.7;1;1"
+        dur="6.5s"
+        begin="3.5s"
+        fill="freeze"
+      />
+
+    </g>
+
+
+    <!-- ==================================================== -->
+    <!-- FLOWER CENTER                                        -->
+    <!-- ==================================================== -->
+
+    <g
+      opacity="0"
+    >
+
+      <circle
+        r="26"
+        fill="#fff1a8"
+        opacity="0.2"
+        filter="url(#glow)"
+      />
+
+      <circle
+        r="19"
+        fill="url(#center)"
+        filter="url(#smallGlow)"
+      >
+        <animate
+          attributeName="r"
+          values="19;21;19"
+          dur="3s"
+          begin="6s"
+          repeatCount="indefinite"
+        />
+      </circle>
+
+      <circle
+        r="7"
+        fill="#fff"
+        opacity="0.8"
+      />
+
+      <animate
+        attributeName="opacity"
+        values="0;0;1"
+        dur="6s"
+        begin="4.5s"
+        fill="freeze"
+      />
+
+    </g>
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- BLOOM SPARKLES                                         -->
+  <!-- ====================================================== -->
+
+  <g opacity="0">
+
+    <use href="#star" transform="translate(270 120) scale(1.1)"/>
+    <use href="#star" transform="translate(430 130) scale(0.8)"/>
+    <use href="#star" transform="translate(300 80) scale(0.6)"/>
+    <use href="#star" transform="translate(410 85) scale(0.7)"/>
+
+    <animate
+      attributeName="opacity"
+      values="0;0;0;1;0.3;1;0.3"
+      dur="8s"
+      begin="5s"
+      repeatCount="indefinite"
+    />
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- FLOATING PETALS                                       -->
+  <!-- ====================================================== -->
+
+  <g fill="#cdb4ff" opacity="0">
+
+    <ellipse
+      cx="225"
+      cy="215"
+      rx="4"
+      ry="8"
+      transform="rotate(25 225 215)"
+    >
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0; 35 70; 75 130"
+        dur="9s"
+        begin="8s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="opacity"
+        values="0;0.8;0"
+        dur="9s"
+        begin="8s"
+        repeatCount="indefinite"
+      />
+
+    </ellipse>
+
+    <ellipse
+      cx="470"
+      cy="200"
+      rx="3"
+      ry="7"
+      transform="rotate(-20 470 200)"
+    >
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;-30 90;-70 150"
+        dur="10s"
+        begin="9s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="opacity"
+        values="0;0.7;0"
+        dur="10s"
+        begin="9s"
+        repeatCount="indefinite"
+      />
+
+    </ellipse>
+
+  </g>
+
+
+  <!-- ====================================================== -->
+  <!-- TINY GROUND PARTICLES                                  -->
+  <!-- ====================================================== -->
+
+  <g fill="#75e8a7">
+
+    <circle cx="295" cy="550" r="2">
+      <animate
+        attributeName="opacity"
+        values="0.2;0.8;0.2"
+        dur="3s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="405" cy="550" r="1.5">
+      <animate
+        attributeName="opacity"
+        values="0.8;0.2;0.8"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="260" cy="545" r="1">
+      <animate
+        attributeName="opacity"
+        values="0.1;0.7;0.1"
+        dur="2.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <circle cx="440" cy="545" r="1">
+      <animate
+        attributeName="opacity"
+        values="0.7;0.1;0.7"
+        dur="3.5s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+  </g>
+
+</svg>
