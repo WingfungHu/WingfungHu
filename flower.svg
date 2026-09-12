@@ -431,10 +431,7 @@
         <!-- CLOSED BUD                                           -->
         <!-- ==================================================== -->
 
-        <g
-          visibility="hidden"
-          opacity="1"
-        >
+        <g display="none">
           <ellipse
             cx="0"
             cy="-20"
@@ -445,8 +442,8 @@
           />
 
           <set
-            attributeName="visibility"
-            to="visible"
+            attributeName="display"
+            to="inline"
             begin="3.4s"
           />
 
@@ -458,7 +455,7 @@
             fill="freeze"
           />
 
-          <animateTransform
+          <animate
             attributeName="transform"
             type="scale"
             values="0.7;1;1;0.7"
