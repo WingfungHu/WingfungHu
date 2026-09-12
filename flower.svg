@@ -431,7 +431,10 @@
         <!-- CLOSED BUD                                           -->
         <!-- ==================================================== -->
 
-        <g opacity="0">
+        <g
+          visibility="hidden"
+          opacity="1"
+        >
           <ellipse
             cx="0"
             cy="-20"
@@ -441,9 +444,15 @@
             filter="url(#glow)"
           />
 
+          <set
+            attributeName="visibility"
+            to="visible"
+            begin="3.4s"
+          />
+
           <animate
             attributeName="opacity"
-            values="0;1;1;0"
+            values="1;1;0"
             dur="3s"
             begin="3.4s"
             fill="freeze"
