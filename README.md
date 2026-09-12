@@ -12,8 +12,7 @@
 
 <br>
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/WingfungHu)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](www.linkedin.com/in/wingfung-hu-65633a233)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wingfung-hu-65633a233)
 [![Email](https://img.shields.io/badge/Email-8B5CF6?style=flat-square&logo=gmail&logoColor=white)](mailto:wingfung.hu@gmail.com)
 
 </div>
@@ -22,38 +21,35 @@
 
 <div align="center">
 
-> _A repository is just a seed._
->
-> _What you build with it is what makes it grow._
+_A repository is just a seed._
+
+_What you build with it is what makes it grow._
 
 </div>
 
 <br>
 
-## 🌱 `about_me`
+## 🌱 `About Me`
 
 I'm a Computer Science student who enjoys turning ideas into things that
 actually work.
 
-I'm interested in software engineering, algorithms, systems, and machine
-learning. Always looking for the next thing worth building.
+Always looking for the next thing worth building.
 
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  $ whoami                                                   │
-│  └── software developer                                     │
-│                                                             │
-│  $ location                                                 │
-│  └── Markham, Canada                                        │
-│                                                             │
-│  $ currently                                                │
-│  ├── studying ML, Computer Vision, Web Dev                  │
-│  ├── building projects                                      │
-│  └── learning DSA, SQL, Linux, Microsoft Azure, JS          │
-│                                                             │
-│  $ philosophy                                               │
-│  └── build → break → understand → rebuild                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+
+### `what I'm growing`
+
+🌱 **Software Engineering**  
+Building things that are useful, maintainable, and actually work.
+
+🧠 **Algorithms & Systems**  
+Getting better at understanding what's happening underneath the abstractions.
+
+🔬 **Machine Learning**  
+Exploring ML, Computer Vision, and the process of turning data into something useful.
+
+🛠️ **Projects**  
+Learning by making things (and occasionally breaking them first).
+
+</div>
