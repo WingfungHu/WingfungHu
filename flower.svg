@@ -449,17 +449,19 @@
 
           <animate
             attributeName="opacity"
-            values="1;1;0"
-            dur="3s"
+            values="0;1;1;1;0"
+            keyTimes="0;0.2;0.7;0.8;1"
+            dur="6s"
             begin="3.4s"
             fill="freeze"
           />
 
-          <animate
+          <animateTransform
             attributeName="transform"
             type="scale"
-            values="0.7;1;1;0.7"
-            dur="3s"
+            values="0.7;1;1;1;0.85"
+            keyTimes="0;0.2;0.7;0.8;1"
+            dur="6s"
             begin="3.4s"
             fill="freeze"
           />
@@ -486,7 +488,7 @@
             attributeName="opacity"
             values="0;0;1"
             dur="6s"
-            begin="3s"
+            begin="7s"
             fill="freeze"
         />
 
@@ -495,7 +497,7 @@
             type="scale"
             values="0.15;0.15;0.7;1;1"
             dur="6s"
-            begin="3s"
+            begin="7s"
             fill="freeze"
         />
 
@@ -554,7 +556,7 @@
         <animate
             attributeName="opacity"
             values="0;0;0;1"
-            dur="6.5s"
+            dur="7.5s"
             begin="3.5s"
             fill="freeze"
         />
@@ -563,7 +565,7 @@
             attributeName="transform"
             type="scale"
             values="0.2;0.2;0.7;1;1"
-            dur="6.5s"
+            dur="7.5s"
             begin="3.5s"
             fill="freeze"
         />
@@ -595,7 +597,7 @@
             attributeName="r"
             values="19;21;19"
             dur="3s"
-            begin="6s"
+            begin="10s"
             repeatCount="indefinite"
             />
         </circle>
@@ -610,7 +612,7 @@
             attributeName="opacity"
             values="0;0;1"
             dur="6s"
-            begin="4.5s"
+            begin="8.5s"
             fill="freeze"
         />
 
