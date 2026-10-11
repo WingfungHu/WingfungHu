@@ -259,7 +259,7 @@
   <!-- STEM                                                   -->
   <!-- ====================================================== -->
 
-  <g>
+  <g id="plant">
 
     <path
       d="
@@ -286,19 +286,6 @@
       />
 
     </path>
-
-    <!-- stem sway after growth -->
-
-    <animateTransform
-      attributeName="transform"
-      type="rotate"
-      values="0 350 555; -1.2 350 555; 0 350 555; 1.2 350 555; 0 350 555"
-      dur="7s"
-      begin="3.4s"
-      repeatCount="indefinite"
-    />
-
-  </g>
 
 
   <!-- ====================================================== -->
@@ -408,23 +395,6 @@
   <g transform="translate(350 180)">
 
     <g>
-
-        <!-- Entire flower gently moves -->
-
-        <animateTransform
-        attributeName="transform"
-        type="rotate"
-        values="
-            0 0 0;
-            -1.5 0 0;
-            0 0 0;
-            1.5 0 0;
-            0 0 0
-        "
-        dur="8s"
-        begin="5s"
-        repeatCount="indefinite"
-        />
 
 
         <!-- ==================================================== -->
@@ -618,8 +588,19 @@
 
         </g>
 
-    </g>
+      </g>
 
+    </g>
+    
+    <!-- Entire flower sway animation -->
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 350 555; -1.2 350 555; 0 350 555; 1.2 350 555; 0 350 555"
+      dur="7s"
+      begin="3.4s"
+      repeatCount="indefinite"
+    />
   </g>
 
 
@@ -636,10 +617,10 @@
 
     <animate
       attributeName="opacity"
-      values="0;0;0;1;0.3;1;0.3"
+      values="0;0;0;1;0.3;1;0"
       dur="8s"
       begin="5s"
-      repeatCount="indefinite"
+      fill="freeze"
     />
 
   </g>
